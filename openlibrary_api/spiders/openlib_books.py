@@ -62,7 +62,6 @@ class OpenlibBooksSpider(scrapy.Spider):
             yield {
                 'title':  ebook.get('title'),
                 'subject': ebook.get('subject'),
-                'user-agent': response.request.headers.get('User-Agent').decode('utf-8')
             }
         
        
